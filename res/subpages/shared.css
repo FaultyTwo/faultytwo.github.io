@@ -1,0 +1,21 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: black; 
+}
+::-webkit-scrollbar-thumb {
+    background: white; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray; 
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+    padding: 0.5em;
+    color: white;
+}

@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(#394B8B, #0F1425);
+    height: 100vh;
+    overflow: hidden; /* what is this bs? */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+}
+
+#lcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.boxes{
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(153,153,153,0.1));
+    border-radius: 10px;
+    border: 0px solid;
+    width: 100%;
+    height: 100%;
+}
+
+.box-one{
+    /* an array of fucked up grids */
+    max-width: 80%;
+    min-height: 50vh; /* remove this later */
+    color: white;
+    .title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0.5em 0.25em 0.25em 0.25em;
+        user-select: none;
+    }
+    #content{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 90%;
+        padding: 1em;
+        #l-grid{
+            padding: 1em;
+        }
+        #r-grid{
+            /* display: grid; */
+            /* grid-template-rows: auto auto; */
+            /* elements spill below */
+            padding: 1em;
+            #links, #credits{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                .greeting{
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                }
+                .about{
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    #foot{
+        font-size: 20px;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        font-weight: lighter;
+    }
+}
+
+.box-two{
+    min-height: 40vh;
+    max-width: 80%;
+    .title{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.box-right{
+    max-height: 90%;
+}
+
+#rcol{
+    width: 90%;
+    .title{
+        font-size: 24px;
+        color: white;
+        padding: 1em;
+        user-select: none;
+    }
+}
+
+#info{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    iframe{
+        position: absolute;
+        border: none;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* shared stuffs */
+.cursor-pointer{
+    cursor: pointer;
+}
+.anim-right{
+    transition: 0.3s;
+}
+.anim-right:hover{
+    transition: 0.3s;
+    transform: translateX(5px);
+}

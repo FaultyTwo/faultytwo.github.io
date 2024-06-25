@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link href="./index.css" rel="stylesheet">
+        <title>Quick Ref About ...</title>
+        <link href="res/index.css" rel="stylesheet">
+        <script src="res/index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1 class="test">Ding dong ping pong</h1>
-        <div>If you are seeing this, then your web page is working correctly! Huzzah!</div>
-        <a href="./about.html">Click me</a>
+        <div class="grid">
+            <div id="lcol">
+                <div class="boxes box-one">
+                    <div class="title">Let's keep this tidy</div>
+                    <div id="content">
+                        <div id="l-grid">Something goes here</div>
+                        <div id="r-grid">
+                            <div id="links">
+                                <div class="greeting anim-right cursor-pointer" 
+                                    onclick="changePage('greeting')">Greeting! ></div>
+                                <div class="about anim-right cursor-pointer" 
+                                    onclick="changePage('about')">About ></div>
+                                <div class="cursor-pointer" style="font-size: 16px;">
+                                    <div class="anim-right" onclick="changePage('bio')">Bio ></div>
+                                    <div class="anim-right" onclick="changePage('dev')">Dev ></div>
+                                </div>
+                            </div>
+                            <!-- <div id="credits">
+                                <div>Your name goes here</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div id="foot">&lt;div&gt;&lt;/div&gt;</div>
+                </div>
+                <div class="boxes box-two">
+                    <div style="padding: 1.25em;">
+                        <div class="title">Seek me @</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae assumenda vitae blanditiis repellat cum exercitationem! 
+                            Debitis est quo aperiam fuga, dolorum, quod aliquam doloribus possimus 
+                            quibusdam blanditiis laboriosam nihil veniam.</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="rcol" class="boxes">
+                <div class="title">Informator-9000</div>
+                <div id="info">
+                    <iframe id="info-iframe" src="res/subpages/greeting.html" title="subpages"></iframe>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>
