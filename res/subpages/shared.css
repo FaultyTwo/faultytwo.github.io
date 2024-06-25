@@ -51,3 +51,15 @@ body{
 .span-udl{
     text-decoration: underline;
 }
+
+.span-hl{
+    color: mediumspringgreen;
+    font-weight: bold;
+}
+
+.span-th{
+    background: linear-gradient(to left, crimson, white, royalblue, white, crimson);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
