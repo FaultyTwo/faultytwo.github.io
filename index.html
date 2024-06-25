@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>Quick Ref About ...</title>
-        <link href="res/index.css" rel="stylesheet">
         <script src="res/index.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="res/index.css" rel="stylesheet">
+        <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     </head>
     <body>
         <div class="grid">
@@ -21,7 +21,7 @@
                                     onclick="changePage('greeting')">Greeting! ></div>
                                 <div class="about anim-right cursor-pointer" 
                                     onclick="changePage('about')">About ></div>
-                                <div class="cursor-pointer" style="font-size: 16px;">
+                                <div class="cursor-pointer else">
                                     <div class="anim-right" onclick="changePage('bio')">Bio ></div>
                                     <div class="anim-right" onclick="changePage('dev')">Dev ></div>
                                 </div>
@@ -31,27 +31,27 @@
                             </div> -->
                         </div>
                     </div>
-                    <div id="foot">&lt;div&gt;&lt;/div&gt;</div>
+                    <!-- <div class="foot">&lt;div&gt;&lt;/div&gt;</div> -->
                 </div>
                 <div class="boxes box-two">
-                    <div style="padding: 1.25em;">
+                    <div class="inline-125">
                         <div class="title">Seek me @</div>
                         <div class="logos">
-                            <a class="link-btn cursor-pointer" 
+                            <a class="link-btn cursor-pointer anim-scale" 
                                 href="https://www.youtube.com/@FaultyTwo"
                                 target="_blank">
-                                <img src="res/logos/youtube.png" height="38" width="48">
+                                <img src="res/logos/youtube.png" height="38" width="48" alt="Youtube Logo">
                                 <span>Youtube</span>
                             </a>
-                            <a class="link-btn cursor-pointer" 
+                            <a class="link-btn cursor-pointer anim-scale" 
                                 href="https://github.com/FaultyTwo"
                                 target="_blank">
-                                <img src="res/logos/github.png" height="46" width="48">
+                                <img src="res/logos/github.png" height="46" width="48" alt="GitHub Logo">
                                 <span>Github</span>
                             </a>
                         </div>
                     </div>
-                    
+                    <!-- <div class="foot">&lt;a&gt;&lt;/a&gt;</div> -->
                 </div>
             </div>
             <div id="rcol" class="boxes">
