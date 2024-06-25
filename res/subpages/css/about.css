@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+.qa-head{
+    text-align: left !important;
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.qa-ans{
+    text-align: justify !important;
+    margin-bottom: 10px;
+}
+
+.blah{
+    margin-bottom: 1em;
+}

@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link href="./index.css" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Quick Ref About ...</title>
+        <script src="res/index.js"></script>
+        <link href="res/index.css" rel="stylesheet">
+        <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     </head>
     <body>
-        <h1 class="test">Ding dong ping pong</h1>
-        <div>If you are seeing this, then your web page is working correctly! Huzzah!</div>
-        <a href="./about.html">Click me</a>
+        <div class="grid">
+            <div id="lcol">
+                <div class="boxes box-one">
+                    <div class="title">Let's keep this tidy</div>
+                    <div id="content">
+                        <div id="l-grid">&lt;image goes here&gt;</div>
+                        <div id="r-grid">
+                            <div id="links">
+                                <div class="greeting anim-right cursor-pointer" 
+                                    onclick="changePage('greeting')">Greeting! ></div>
+                                <div class="about anim-right cursor-pointer" 
+                                    onclick="changePage('about')">About ></div>
+                                <div class="cursor-pointer else">
+                                    <div class="anim-right" onclick="changePage('bio')">Bio ></div>
+                                    <div class="anim-right" onclick="changePage('dev')">Dev ></div>
+                                </div>
+                            </div>
+                            <!-- <div id="credits">
+                                <div>Your name goes here</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="foot">&lt;div&gt;&lt;/div&gt;</div> -->
+                </div>
+                <div class="boxes box-two">
+                    <div class="inline-125">
+                        <div class="title">Seek me @</div>
+                        <div class="logos">
+                            <a class="link-btn cursor-pointer anim-scale" 
+                                href="https://www.youtube.com/@FaultyTwo"
+                                target="_blank">
+                                <img src="res/logos/youtube.png" height="38" width="48" alt="Youtube Logo">
+                                <span>Youtube</span>
+                            </a>
+                            <a class="link-btn cursor-pointer anim-scale" 
+                                href="https://github.com/FaultyTwo"
+                                target="_blank">
+                                <img src="res/logos/github.png" height="46" width="48" alt="GitHub Logo">
+                                <span>Github</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="foot">&lt;a&gt;&lt;/a&gt;</div> -->
+                </div>
+            </div>
+            <div id="rcol" class="boxes">
+                <div class="title">Informator-9000</div>
+                <div id="info">
+                    <iframe id="info-iframe" src="res/subpages/greeting.html" title="subpages"></iframe>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>
