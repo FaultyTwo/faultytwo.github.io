@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* main */
+/* desktop */
 body {
     background: linear-gradient(#394B8B, #0F1425);
     background-repeat: no-repeat;
@@ -74,14 +74,20 @@ body {
                 align-items: end;
                 text-align: right;
                 .greeting{
+                    text-decoration: none;
+                    color: white;
                     font-size: 24px;
                     margin-bottom: 16px;
                 }
                 .about{
+                    text-decoration: none;
+                    color: white;
                     font-size: 24px;
                     margin-bottom: 5px;
                 }
                 .else{
+                    text-decoration: none;
+                    color: white;
                     font-size: 16px;
                 }
             }
@@ -161,6 +167,49 @@ body {
     }
 }
 
+/* mobile */
+@media (max-width: 768px) {
+    .grid{
+        display: block;
+    }
+
+    .box-one{
+        .title{
+            font-size: 32px;
+        }
+        #content{
+            #r-grid{
+                #links{
+                    .greeting{
+                        font-size: 20px;
+                        /* margin-bottom: 16px; */
+                    }
+                    .about{
+                        font-size: 20px;
+                        /* margin-bottom: 5px; */
+                    }
+                    .else{
+                        font-size: 12px;
+                    }
+                }
+                #credits{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    #rcol{
+        margin-top: 20px;
+        margin-right: 5vw;
+        min-height: 90vh;
+        float: right;
+        #info{
+            min-height: 70vh;
+        }
+    }
+}
+
 /* shared stuffs */
 .foot{
     font-size: 20px;
@@ -173,20 +222,28 @@ body {
 .cursor-pointer{
     cursor: pointer;
 }
+
 .anim-right{
     transition: 0.3s;
 }
-.anim-right:hover{
-    transition: 0.3s;
-    transform: translateX(5px);
+
+
+@media (pointer: fine){
+    .anim-right:hover{
+        transition: 0.3s;
+        transform: translateX(5px);
+    }
+    .anim-scale{
+        transition: 0.3s;
+    }
+    .anim-scale:hover{
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
 }
 
-.anim-scale{
-    transition: 0.3s;
-}
-.anim-scale:hover{
-    transition: 0.3s;
-    transform: scale(1.05);
+@media (pointer: coarse){
+    
 }
 
 .link-btn{
