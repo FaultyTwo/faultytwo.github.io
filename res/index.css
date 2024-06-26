@@ -182,11 +182,9 @@ body {
                 #links{
                     .greeting{
                         font-size: 20px;
-                        /* margin-bottom: 16px; */
                     }
                     .about{
                         font-size: 20px;
-                        /* margin-bottom: 5px; */
                     }
                     .else{
                         font-size: 12px;
@@ -202,7 +200,7 @@ body {
     #rcol{
         margin-top: 20px;
         margin-right: 5vw;
-        min-height: 90vh;
+        min-height: 90vh; 
         float: right;
         #info{
             min-height: 70vh;
@@ -226,7 +224,6 @@ body {
 .anim-right{
     transition: 0.3s;
 }
-
 
 @media (pointer: fine){
     .anim-right:hover{
