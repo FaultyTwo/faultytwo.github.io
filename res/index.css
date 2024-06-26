@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* main */
+/* desktop */
 body {
     background: linear-gradient(#394B8B, #0F1425);
-    height: 100vh;
-    overflow: hidden; /* what is this bs? */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    /* what is this bs? */
+    /* overflow: hidden; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
@@ -45,6 +50,8 @@ body {
         font-size: 40px;
         font-weight: bold;
         padding: 0.5em 0.25em 0.25em 0.25em;
+        -moz-user-select: none;
+        -webkit-user-select: none;
         user-select: none;
     }
     #content{
@@ -54,27 +61,44 @@ body {
         padding: 1em;
         #l-grid{
             padding: 1em;
+            border-right: 2px solid white;
         }
         #r-grid{
             /* display: grid; */
             /* grid-template-rows: auto auto; */
             /* elements spill below */
             padding: 1em;
-            #links, #credits{
+            #links{
                 display: flex;
                 flex-direction: column;
                 align-items: end;
+                text-align: right;
                 .greeting{
+                    text-decoration: none;
+                    color: white;
                     font-size: 24px;
                     margin-bottom: 16px;
                 }
                 .about{
+                    text-decoration: none;
+                    color: white;
                     font-size: 24px;
                     margin-bottom: 5px;
                 }
                 .else{
+                    text-decoration: none;
+                    color: white;
                     font-size: 16px;
                 }
+            }
+            #credits{
+                border-top: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                padding-top: 1em;
+                margin-top: 0.75em;
+                text-align: right;
             }
         }
     }
@@ -89,6 +113,8 @@ body {
         font-size: 24px;
         font-weight: bold;
         color: white;
+        -moz-user-select: none;
+        -webkit-user-select: none;
         user-select: none;
     }
     .logos{
@@ -113,6 +139,8 @@ body {
         font-size: 24px;
         color: white;
         padding: 1em;
+        -moz-user-select: none;
+        -webkit-user-select: none;
         user-select: none;
     }
 }
@@ -139,11 +167,52 @@ body {
     }
 }
 
+/* mobile */
+@media (max-width: 768px) {
+    .grid{
+        display: block;
+    }
+
+    .box-one{
+        .title{
+            font-size: 32px;
+        }
+        #content{
+            #r-grid{
+                #links{
+                    .greeting{
+                        font-size: 20px;
+                    }
+                    .about{
+                        font-size: 20px;
+                    }
+                    .else{
+                        font-size: 12px;
+                    }
+                }
+                #credits{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    #rcol{
+        margin-top: 20px;
+        margin-right: 5vw;
+        min-height: 90vh; 
+        float: right;
+        #info{
+            min-height: 70vh;
+        }
+    }
+}
+
 /* shared stuffs */
 .foot{
     font-size: 20px;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
     font-weight: lighter;
     color: white;
 }
@@ -151,25 +220,33 @@ body {
 .cursor-pointer{
     cursor: pointer;
 }
+
 .anim-right{
     transition: 0.3s;
 }
-.anim-right:hover{
-    transition: 0.3s;
-    transform: translateX(5px);
+
+@media (pointer: fine){
+    .anim-right:hover{
+        transition: 0.3s;
+        transform: translateX(5px);
+    }
+    .anim-scale{
+        transition: 0.3s;
+    }
+    .anim-scale:hover{
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
 }
 
-.anim-scale{
-    transition: 0.3s;
-}
-.anim-scale:hover{
-    transition: 0.3s;
-    transform: scale(1.05);
+@media (pointer: coarse){
+    
 }
 
 .link-btn{
     display: flex;
     align-items: center;
+    width: -moz-fit-content;
     width: fit-content;
     color: white;
     span{
