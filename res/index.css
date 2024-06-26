@@ -3,8 +3,13 @@
 /* main */
 body {
     background: linear-gradient(#394B8B, #0F1425);
-    height: 100vh;
-    overflow: hidden; /* what is this bs? */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    /* what is this bs? */
+    /* overflow: hidden; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
@@ -56,16 +61,18 @@ body {
         padding: 1em;
         #l-grid{
             padding: 1em;
+            border-right: 2px solid white;
         }
         #r-grid{
             /* display: grid; */
             /* grid-template-rows: auto auto; */
             /* elements spill below */
             padding: 1em;
-            #links, #credits{
+            #links{
                 display: flex;
                 flex-direction: column;
                 align-items: end;
+                text-align: right;
                 .greeting{
                     font-size: 24px;
                     margin-bottom: 16px;
@@ -77,6 +84,15 @@ body {
                 .else{
                     font-size: 16px;
                 }
+            }
+            #credits{
+                border-top: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                padding-top: 1em;
+                margin-top: 0.75em;
+                text-align: right;
             }
         }
     }
@@ -148,8 +164,8 @@ body {
 /* shared stuffs */
 .foot{
     font-size: 20px;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
     font-weight: lighter;
     color: white;
 }
